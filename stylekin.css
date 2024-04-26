@@ -8,6 +8,7 @@
         width: 100%;
         height: 4570px;
         background: radial-gradient(#181A19,#24282B);
+	overflow-x: hidden;
     }
     header{
         width: 100%;
