@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MovieDB</title>
+    <link rel="stylesheet" href="stylekin.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logoGrey">
+                <div class="logoBlue">
+                    <img src="logoBlue.svg">
+                </div>
+            </div>
+                <p class="logotxt">Знаем, что вам понравится</p>
+        </div>
+       <div class="menu">
+            <a class="textMenu">Главная</a>
+            <a class="textMenu">Подборки</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">По жанру</button>
+                <div class="dropem" id="myDropdown">
+                    <a href="#">Боевик</a>
+                    <a href="#">Военные</a>
+                    <a href="#">Детектив</a>
+                    <a href="#">Детский</a>
+                    <a href="#">Драма</a>
+                    <a href="#">Комедия</a>
+                    <a href="#">Криминал</a>
+                    <a href="#">Мелодрама</a>
+                    <a href="#">Триллер</a>
+                    <a href="#">Ужасы</a>
+                    <a href="#">Фантастика</a>
+                    <a href="#">Фентези</a>
+                </div>
+            </div>
+            <a class="textMenu">Фильмы</a>
+            <a class="textMenu">Сериалы</a>
+            <a class="textMenu">Мультфильмы</a>
+            <a class="textMenu">Аниме</a>
+            <a class="textMenu">Актеры</a>
+        </div>
+        <form class="search">
+            <input type="text" placeholder="Поиск по сайту" class="searchOnSite">
+            <button class="loupe" type="submit"></button>
+        </form>
+    </header>
+    <main>
+        <div class="bgmasks">
+            <img class="mask1" src="topMainFone.svg">
+            <img class="mask2" src="midMainFone.svg">
+            <img class="mask3" src="bottomMainFone.svg">
+        </div>
+        <div class="menus">
+            <div class="mainmenu">
+                <div class="banner">
+                    <div class="hleb">
+                        <p class="mainmenutxt">Главная / Подборки /<span id="lushie">Лучшие фильмы всех времен</span></p>
+                    </div>
+                    <div class="bestfilms">
+                        <p class="bestfilmstxt">Лучшие фильмы всех<br>времен</p>
+                    </div>
+                </div>
+                <div class="txtunderbanner">Мы собрали для Вас подборку лучших фильмов по теме “{название подборки}” с рейтингом от {минимальный рейтинг фильмов из подборки}   и до {максимальный рейтинг фильмов из подборки}. В неё вошли фильмы следующих жанров: {жанр1}({число раз}), {жанр2}({число раз}), {жанр3}({число раз}). Самый новый фильм - {год} года, самый старый фильм - {год} года. Продолжительность фильмов от {минимальная продолжительность} до {максимальная продолжительность}. Выбирайте фильм и приятного просмотра!
+                </div>
+            </div>
+            <div class="bestfilmspodb">
+                <h2 id="bestf">Лучшие фильмы подборки</h2>
+                <div id="line"></div>
+                <div class="skins">
+                    <div class="card">
+                        <div id="cardpic1">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Механик</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic2">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Шан-Чи и легенда десяти колец</p>
+                        <p class="cardtxt2">2020, Фантастика, Великобритания</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic3">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Гениальное<br>ограбление</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic4">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Персонаж</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic5">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Пассажиры</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newfilmspodb">
+                <h2 id="bestf">Лучшие фильмы подборки</h2>
+                <div id="line"></div>
+                <div class="skins">
+                    <div class="card">
+                        <div id="cardpic3">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Гениальное<br>ограбление</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic4">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Персонаж</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic5">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Пассажиры</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic2">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Шан-Чи и легенда десяти колец</p>
+                        <p class="cardtxt2">2020, Фантастика, Великобритания</p>
+                    </div>
+                    <div class="card">
+                        <div id="cardpic1">
+                            <img src="bestchoice/Рейтинг IMBb.svg" class="cardpicmark">
+                            <img src="bestchoice/Рейтинг Кинопоиск.svg" class="cardpicmark">
+                        </div>
+                        <p class="cardtxt1">Механик</p>
+                        <p class="cardtxt2">2020, Драма, США</p>
+                    </div>
+                </div>
+            </div>
+            <div class="filmcard1">
+                <div class="visual1">
+                    <p class="vstext">01</p>
+                    <div class="filmpic">
+                        <img src="filmcard/Rectangle 8.svg">
+                    </div>
+                    <div class="reit">
+                        <div class="circle1">
+                            <span class="circletxt1">8.9</span>
+                            <span class="circletxt12">Кинопоиск</span>
+                        </div>
+                        <div class="circle2">
+                            <span class="circletxt2">8</span>
+                            <span class="circletxt22">IMDb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description1">
+                    <h2 class="filmtitle">Гениальное ограбление (2021)</h2>
+                    <h2 class="filmtitle2">Way Down</h2>
+                    <div class="inform1">
+                        <div class="info1">
+                            <span class="inftxt1">Продолжительность</span>
+                            <span class="inftxt1">Год выпуска</span>
+                            <span class="inftxt1">Премьера фильма в России</span>
+                            <span class="inftxt1">Возраст</span>
+                        </div>
+                        <div class="info2">
+                            <span id="inftxt21">1 Час 58 минут</span>
+                            <span id="inftxt22">2021</span>
+                            <span id="inftxt23">22 Апреля 2021</span>
+                            <span id="inftxt24">16+</span>
+                        </div>
+                    </div>
+                    <div class="inform2">
+                        <div class="str">
+                            <span class="janr">Жанр</span>
+                            <span id="j">Боевик, Комедия, Драма</span>
+                        </div>
+                        <div class="str">
+                            <span class="janr">Страна</span>
+                            <span id="c">США</span>
+                        </div>
+                        <div class="str">
+                            <span class="janr">В главных ролях</span>
+                            <span id="act">Адам Уэст, Берт Уорд, Уильям Шетнер</span>
+                        </div>
+                        <div class="str">
+                            <span class="janr">Участвует в подборках</span>
+                            <div class="ssilki">
+                                <a class="jssil" href="...">2021</a>
+                                <a class="jssil" href="...">Нетфликс</a>
+                                <a class="jssil" href="...">Вестерны</a>
+                                <a class="jssil" href="...">Аниме</a>
+                                <a class="jssil" href="...">Лучшие фильмы 2021</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abouttxt">
+                        <h2 class="zagabout">О чем фильм “Гениальное ограбление (2021)”</h2>
+                        <div class="desabout">
+                            <p>Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа направлений прогрессивного развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+                            <p>Постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации направлений.</p>
+                        </div>
+                        <a class="more" href="...">Еще</a>
+                    </div>
+                </div>
+            </div>
+            <div class="filmcard2">
+                <div class="visual1">
+                    <p class="vstext">02</p>
+                    <div class="filmpic">
+                        <img src="filmcard/Rectangle 8 (1).svg">
+                    </div>
+                    <div class="reit1">
+                        <div class="circle1">
+                            <span class="circletxt1">8.9</span>
+                            <span class="circletxt12">Кинопоиск</span>
+                        </div>
+                        <div class="circle2">
+                            <span class="circletxt2">8</span>
+                            <span class="circletxt22">IMDb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="description2">
+                    <h2 class="filmtitle">Шан-Чи и легенда десяти колец (2021)</h2>
+                    <h2 class="filmtitle2">Shang-Chi and the Legend of the Ten Rings</h2>
+                    <div class="inform1">
+                        <div class="info1">
+                            <span class="inftxt1">Продолжительность</span>
+                            <span class="inftxt1">Год выпуска</span>
+                            <span class="inftxt1">Премьера фильма в России</span>
+                            <span class="inftxt1">Возраст</span>
+                        </div>
+                        <div class="info2">
+                            <span id="inftxt21">1 Час 58 минут</span>
+                            <span id="inftxt22">2021</span>
+                            <span id="inftxt23">22 Апреля 2021</span>
+                            <span id="inftxt24">16+</span>
+                        </div>
+                    </div>
+                    <div class="inform22">
+                        <div class="str">
+                            <span class="janr">Жанр</span>
+                            <span id="j">Боевик, Комедия, Драма</span>
+                        </div>
+                        <div class="str">
+                            <span class="janr">Страна</span>
+                            <span id="c">США</span>
+                        </div>
+                        <div class="str">
+                            <span class="janr">В главных ролях</span>
+                            <span id="act">Адам Уэст, Берт Уорд, Уильям Шетнер</span>
+                        </div>
+                        <div class="str">
+                            <span class="janr">Участвует в подборках</span>
+                            <div class="ssilki">
+                                <a class="jssil" href="...">2021</a>
+                                <a class="jssil" href="...">Нетфликс</a>
+                                <a class="jssil" href="...">Вестерны</a>
+                                <a class="jssil" href="...">Аниме</a>
+                                <a class="jssil" href="...">Лучшие фильмы 2021</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abouttxt1">
+                        <h2 class="zagabout">О чем фильм “Гениальное ограбление (2021)”</h2>
+                        <div class="desabout">
+                            <p>Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа направлений прогрессивного развития. Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации направлений прогрессивного развития.</p>
+                            <p>Постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки систем массового участия. Разнообразный и богатый опыт постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                            <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации направлений.</p>
+                        </div>
+                        <a class="more" href="...">Еще</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebars">
+            <div class="sidebar1">
+                <div class="sidebh2">
+                    <p class="sbh2">ПОХОЖИЕ КОЛЛЕКЦИИ</p>
+                </div>
+                <div class="podbs">
+                    <div class="podb">
+                        <img src="Rectangle 7.svg" class="podimg">
+                        <div class="podbwi">
+                            <div class="data">
+                                <img src="clock.svg">
+                                <p class="datatxt">2 недели назад</p>
+                            </div>
+                            <p class="podbtxt">Задача организации, в особенности же новая формировании.</p>
+                        </div>
+                    </div>
+                    <div class="podb">
+                        <img src="Rectangle 7 (1).svg" class="podimg">
+                        <div class="podbwi">
+                            <div class="data">
+                                <img src="clock.svg">
+                                <p class="datatxt">2 недели назад</p>
+                            </div>
+                            <p class="podbtxt">Задача организации, в особенности же новая формировании.</p>
+                        </div>
+                    </div>
+                    <div class="podb">
+                        <img src="Rectangle 7 (2).svg" class="podimg">
+                        <div class="podbwi">
+                            <div class="data">
+                                <img src="clock.svg">
+                                <p class="datatxt">2 недели назад</p>
+                            </div>
+                            <p class="podbtxt">Задача организации, в особенности же новая формировании.</p>
+                        </div>
+                    </div>
+                    <div class="podb">
+                        <img src="Rectangle 7 (3).svg" class="podimg">
+                        <div class="podbwi">
+                            <div class="data">
+                                <img src="clock.svg">
+                                <p class="datatxt">2 недели назад</p>
+                            </div>
+                            <p class="podbtxt">Задача организации, в особенности же новая формировании.</p>
+                        </div>
+                    </div>
+                    <div class="podb">
+                        <img src="Rectangle 7 (4).svg" class="podimg">
+                        <div class="podbwi">
+                            <div class="data">
+                                <img src="clock.svg">
+                                <p class="datatxt">2 недели назад</p>
+                            </div>
+                            <p class="podbtxt">Задача организации, в особенности же новая формировании.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar2">
+                <div id="zagsb">
+                    <h2 id="zagasb">ПОПУЛЯРНЫЕ КОЛЛЕКЦИИ</h2>
+                </div>
+                <div id="bgman">
+                    <p id="bestser">Лучшие сериалы 2015-2021 годов</p>
+                    <input type="button" id="sbbtn" value="Cмотреть"></input>
+                </div>
+            </div>
+            <div class="dots">
+                <div class="nonedot"></div>
+                <div class="nonedot"></div>
+                <div class="yesdot"></div>
+                <div class="nonedot"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="logof">
+            <div class="logofGrey">
+                <img src="logofBlue.svg" class="logofBlue">
+            </div>
+            <a class="logofa">Знаем, что вам понравится</a>
+           </div>
+        <div class="menuf">
+            <p class="menuft" id="menuft1">Меню</p>
+            <p class="menuft">Подборки</p>
+            <p class="menuft">По жанру</p>
+            <p class="menuft">Фильмы</p>
+            <p class="menuft">Сериалы</p>
+            <p class="menuft">Мультфильмы</p>
+            <p class="menuft">Аниме</p>
+            <p class="menuft">Актеры</p>
+        </div>
+        <div id="greyline">
+        </div>
+        <div id="aboutfoot">
+            <h3 id="onas">О нас</h3>
+            <p class="footabout">Зная всё о кино, хочется поделиться этим с другими. Делитесь фильмами, трейлерами, персонами и новостями в социальных сетях, присваивайте рейтинги фильмам и обсуждайте их с друзьями и подписчиками!
+            <br><br>Интересные фильмы, ближайшие кинотеатры и любимых актеров можно добавлять в «Избранное». Система покажет все связанные с ними новости и новые трейлеры, подскажет, когда можно купить билет в кино на интересующую премьеру. Присоединяйтесь!
+            </p>
+        </div>
+        <div id="bottomline">
+        </div>
+        <div id="bottomfoot">
+            <div class="bottomtxt">©Все права защищены MovieDB.ru 2021</div>
+            <div id="icons">
+                <div class="icon">
+                    <img src="footericons/facebook (7) 1.svg" width="31px" height="31px">
+                </div>
+                <div class="icon">
+                    <img src="footericons/instagram (7) 1.svg" width="31px" height="31px">
+                </div>
+                <div class="icon">
+                    <img src="footericons/vk-social-network-logo 1.svg" width="31px" height="31px">
+                </div>
+            </div>
+            <div class="bottomtxt"><a href=".." id="btmref">Политика конфиденциальности</a></div> 
+        </div>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+</html>
